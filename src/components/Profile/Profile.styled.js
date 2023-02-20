@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledProfile = styled.div`
-  width: 350px;
-  margin: auto;
+  width: 400px;
+  margin: 30px auto;
   border: 2px solid #dbdbd7;
   border-radius: 10px;
   box-shadow: 2px 2px 4px 2px rgba(185, 56, 252, 0.2);
@@ -14,20 +14,25 @@ export const StyledProfile = styled.div`
   }
 
   & .profileAvatar {
-    width: 100%;
-    border-radius: 40%;
+    max-width: 50%;
+    margin: 0 auto;
+    border: 1px solid #91919060;
+    border-radius: 50%;
+    background-color: #91919020;
   }
 
   & .profileName {
+    margin-top: 15px;
     margin-bottom: 7px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.3;
   }
 
   & .profileTag,
   & .profileLocation {
     margin-bottom: 10px;
+    font-size: 19px;
     color: #919190;
   }
 
@@ -39,9 +44,14 @@ export const StyledProfile = styled.div`
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 2px solid #8a0158;
-    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 
     background-color: #80016ab3;
+  }
+
+  & .label {
+    font-size: 20px;
   }
 
   & .profileStatsItem {
@@ -55,7 +65,7 @@ export const StyledProfile = styled.div`
   }
 
   & .profileQuantity {
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 700;
   }
 `;
