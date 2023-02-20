@@ -9,7 +9,7 @@ function getRandomHexColor() {
 export function Statistics({ title, stats }) {
   return (
     <StyledStatistics className="statistics">
-      <h2 className={title}>Upload stats</h2>
+      {title && <h2 className="title">{title}</h2>}
       <ul className="statList">
         {stats.map(data => (
           <li className="statItem " key={data.id} style={{ backgroundColor: getRandomHexColor() }}>
