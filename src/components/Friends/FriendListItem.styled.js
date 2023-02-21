@@ -15,23 +15,20 @@ export const StyledFriendListItem = styled.li`
     margin-right: 10px;
   }
 
-  & .online {
+  & .status {
     display: block;
     text-align: center;
     margin: 20px 20px 20px 20px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
+  }
+
+  & .online {
     background-color: green;
   }
 
   & .offline {
-    display: block;
-    text-align: center;
-    margin: 20px 20px 20px 20px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background-color: red;
   }
 `;
